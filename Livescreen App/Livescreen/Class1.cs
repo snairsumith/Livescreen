@@ -105,5 +105,29 @@ namespace Livescreen
             return dataTable;
 
         }
+        public DataTable GetDownloadeFiles(string pno)
+        {
+            DataTable dataTable = new DataTable();
+
+            try
+            {
+
+
+                SqlConnection conn = new SqlConnection(connStr);
+                string sql = "select * from FileShare where seen=0 and userPhone='" + pno + "'";
+                SqlDataAdapter sda = new SqlDataAdapter(sql, conn);
+                sda.Fill(dataTable);
+
+            }
+            catch (Exception ex)
+            {
+                //MessageBox.Show(string.Format("An error occurred {0}", ex.Message), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+
+            }
+            return dataTable;
+        }
     }
 }

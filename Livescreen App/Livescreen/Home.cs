@@ -15,6 +15,7 @@ using System.Resources;
 using System.Runtime.InteropServices;
 using System.Management;
 using System.Net;
+using NotificationWindow;
 namespace Livescreen
 {
     public partial class Home : Form
@@ -599,7 +600,7 @@ namespace Livescreen
                 ds = c.Getaction(lblPhno.Text);
                 if (ds.Rows.Count > 0)
                 {
-                    //For action 1-shutdown,2-Restart,3-Logoff,4-FORCE SHUTDOWN,5-Screen capture,6-chat"
+                    //For action 1-shutdown,2-Restart,3-Logoff,4-FORCE SHUTDOWN,5-Screen capture,6-chat,7-new File Send"
                     if (ds.Rows[0]["action"].ToString() == "1")
                     {
                         
@@ -639,6 +640,14 @@ namespace Livescreen
                     else if (ds.Rows[0]["action"].ToString() == "6")
                     {
 
+                       
+
+                    }
+                    else if (ds.Rows[0]["action"].ToString() == "7")
+                    {
+                        
+                        notifyIcon1.BalloonTipText = "Admin send new file Download that file";
+                        notifyIcon1.ShowBalloonTip(1000);
                        
 
                     }
@@ -726,6 +735,12 @@ namespace Livescreen
                 this.Hide();
                 timer1.Start();
             }
+        }
+
+        private void downloadFileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DownloadFiles dwn = new DownloadFiles(Phno);
+            dwn.Show();
         }
     }
 }

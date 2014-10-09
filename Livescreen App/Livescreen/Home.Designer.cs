@@ -52,6 +52,8 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.closToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.popupNotifier1 = new NotificationWindow.PopupNotifier();
+            this.downloadFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -77,6 +79,7 @@
             // 
             this.settingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.timeToolStripMenuItem,
+            this.downloadFileToolStripMenuItem,
             this.logoutToolStripMenuItem});
             this.settingsToolStripMenuItem.Font = new System.Drawing.Font("Britannic Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.settingsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.InfoText;
@@ -89,7 +92,7 @@
             this.timeToolStripMenuItem.Font = new System.Drawing.Font("Britannic Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.timeToolStripMenuItem.Image = global::Livescreen.Properties.Resources.timer;
             this.timeToolStripMenuItem.Name = "timeToolStripMenuItem";
-            this.timeToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.timeToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.timeToolStripMenuItem.Text = "Timer";
             this.timeToolStripMenuItem.Click += new System.EventHandler(this.timeToolStripMenuItem_Click);
             // 
@@ -98,7 +101,7 @@
             this.logoutToolStripMenuItem.Font = new System.Drawing.Font("Britannic Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logoutToolStripMenuItem.Image = global::Livescreen.Properties.Resources.logout;
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.logoutToolStripMenuItem.Text = "Logout";
             this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
@@ -268,6 +271,23 @@
             this.closToolStripMenuItem.Text = "Close";
             this.closToolStripMenuItem.Click += new System.EventHandler(this.closToolStripMenuItem_Click);
             // 
+            // popupNotifier1
+            // 
+            this.popupNotifier1.ContentFont = new System.Drawing.Font("Tahoma", 8F);
+            this.popupNotifier1.ContentText = null;
+            this.popupNotifier1.Image = null;
+            this.popupNotifier1.OptionsMenu = null;
+            this.popupNotifier1.Size = new System.Drawing.Size(400, 100);
+            this.popupNotifier1.TitleFont = new System.Drawing.Font("Segoe UI", 11.25F);
+            this.popupNotifier1.TitleText = null;
+            // 
+            // downloadFileToolStripMenuItem
+            // 
+            this.downloadFileToolStripMenuItem.Name = "downloadFileToolStripMenuItem";
+            this.downloadFileToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.downloadFileToolStripMenuItem.Text = "Download File";
+            this.downloadFileToolStripMenuItem.Click += new System.EventHandler(this.downloadFileToolStripMenuItem_Click);
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -328,5 +348,7 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem closToolStripMenuItem;
+        private NotificationWindow.PopupNotifier popupNotifier1;
+        private System.Windows.Forms.ToolStripMenuItem downloadFileToolStripMenuItem;
     }
 }

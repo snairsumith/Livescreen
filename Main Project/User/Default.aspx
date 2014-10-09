@@ -31,6 +31,9 @@
                 </asp:TemplateField>
             </Columns>
         </asp:GridView>
+        <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource1" DataTextField="userIp" DataValueField="userPhno">
+        </asp:DropDownList>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:LivescreenConnectionString %>" SelectCommand="SELECT [userIp], [userPhno] FROM [Ip_tbl]"></asp:SqlDataSource>
     </form>
 </body>
 </html>

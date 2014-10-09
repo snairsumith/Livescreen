@@ -24,6 +24,12 @@
                     <asp:Button ID="Button1" runat="server" Text="Send" OnClick="Button1_Click" />
                 </td>
             </tr>
+         <tr>
+                <td>&nbsp;</td>
+                <td>
+                    <asp:Label ID="lblMsg" runat="server" Text=""></asp:Label>
+                </td>
+            </tr>
         </table>
 </asp:Content>
 
