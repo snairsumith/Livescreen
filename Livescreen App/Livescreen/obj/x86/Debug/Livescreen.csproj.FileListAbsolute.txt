@@ -1,0 +1,22 @@
+D:\Sumith\PROJECT\Final Projects\ASP.net Project\My Project\LiveScreenz\Livescreen app\Livescreen\Livescreen\obj\x86\Debug\Livescreen.exe
+D:\Sumith\PROJECT\Final Projects\ASP.net Project\My Project\LiveScreenz\Livescreen app\Livescreen\Livescreen\obj\x86\Debug\Livescreen.pdb
+D:\Sumith\PROJECT\Final Projects\ASP.net Project\My Project\LiveScreenz\Livescreen app\Livescreen\Livescreen\bin\Debug\Livescreen.exe
+D:\Sumith\PROJECT\Final Projects\ASP.net Project\My Project\LiveScreenz\Livescreen app\Livescreen\Livescreen\bin\Debug\Livescreen.pdb
+D:\Sumith\PROJECT\Final Projects\ASP.net Project\My Project\LiveScreenz\Livescreen app\Livescreen\Livescreen\obj\x86\Debug\Livescreen.Form1.resources
+D:\Sumith\PROJECT\Final Projects\ASP.net Project\My Project\LiveScreenz\Livescreen app\Livescreen\Livescreen\obj\x86\Debug\Livescreen.Form2.resources
+D:\Sumith\PROJECT\Final Projects\ASP.net Project\My Project\LiveScreenz\Livescreen app\Livescreen\Livescreen\obj\x86\Debug\Livescreen.Home.resources
+D:\Sumith\PROJECT\Final Projects\ASP.net Project\My Project\LiveScreenz\Livescreen app\Livescreen\Livescreen\obj\x86\Debug\Livescreen.Properties.Resources.resources
+D:\Sumith\PROJECT\Final Projects\ASP.net Project\My Project\LiveScreenz\Livescreen app\Livescreen\Livescreen\obj\x86\Debug\Livescreen.csproj.GenerateResource.Cache
+D:\Sumith\PROJECT\Final Projects\ASP.net Project\My Project\LiveScreenz\Livescreen app\Livescreen\Livescreen\obj\x86\Debug\Livescreen.csprojResolveAssemblyReference.cache
+D:\Sumith\Project New\Final Projects\ASP.net Project\My Project\LiveScreenz\Livescree  Backup\OLD\Livescreen app\Livescreen\Livescreen\obj\x86\Debug\Livescreen.exe
+D:\Sumith\Project New\Final Projects\ASP.net Project\My Project\LiveScreenz\Livescree  Backup\OLD\Livescreen app\Livescreen\Livescreen\obj\x86\Debug\Livescreen.pdb
+D:\Sumith\Project New\Final Projects\ASP.net Project\My Project\Livescreen New\Livescreen App\Livescreen\obj\x86\Debug\Livescreen.exe
+D:\Sumith\Project New\Final Projects\ASP.net Project\My Project\Livescreen New\Livescreen App\Livescreen\obj\x86\Debug\Livescreen.pdb
+D:\Sumith\Project New\Final Projects\ASP.net Project\My Project\Livescreen New\Livescreen App\Livescreen\obj\x86\Debug\Livescreen.csprojResolveAssemblyReference.cache
+D:\Sumith\Project New\Final Projects\ASP.net Project\My Project\Livescreen New\Livescreen App\Livescreen\obj\x86\Debug\Livescreen.Form1.resources
+D:\Sumith\Project New\Final Projects\ASP.net Project\My Project\Livescreen New\Livescreen App\Livescreen\obj\x86\Debug\Livescreen.Form2.resources
+D:\Sumith\Project New\Final Projects\ASP.net Project\My Project\Livescreen New\Livescreen App\Livescreen\obj\x86\Debug\Livescreen.Home.resources
+D:\Sumith\Project New\Final Projects\ASP.net Project\My Project\Livescreen New\Livescreen App\Livescreen\obj\x86\Debug\Livescreen.Properties.Resources.resources
+D:\Sumith\Project New\Final Projects\ASP.net Project\My Project\Livescreen New\Livescreen App\Livescreen\obj\x86\Debug\Livescreen.csproj.GenerateResource.Cache
+D:\Sumith\Project New\Final Projects\ASP.net Project\My Project\Livescreen New\Livescreen App\Livescreen\bin\Debug\Livescreen.exe
+D:\Sumith\Project New\Final Projects\ASP.net Project\My Project\Livescreen New\Livescreen App\Livescreen\bin\Debug\Livescreen.pdb
