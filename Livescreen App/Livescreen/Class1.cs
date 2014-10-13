@@ -129,5 +129,14 @@ namespace Livescreen
             }
             return dataTable;
         }
+        public int UpdateStatus(string phnop,string status)
+        {
+              SqlConnection conn = new SqlConnection(connStr);
+              SqlCommand cmd = new SqlCommand("update Login_tbl set status='" + status + "' where username='" + phnop + "'", conn);
+              conn.Open();
+              int i = cmd.ExecuteNonQuery();
+              conn.Close();
+              return i;
+        }
     }
 }

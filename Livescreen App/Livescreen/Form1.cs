@@ -76,6 +76,7 @@ return retIp;
                 sbi.Fill(dt);
                 if (dt.Rows.Count > 0)
                 {
+                    css.UpdateStatus(txtUsername.Text, "Online");
                    
                     Home h = new Home(txtUsername.Text, dt.Rows[0]["name"].ToString());
                     UpdateOrInsertIp();
@@ -122,7 +123,7 @@ return retIp;
             con.Close();
 
         }
-
+        
         private void button2_Click(object sender, EventArgs e)
         {
             Application.Exit();

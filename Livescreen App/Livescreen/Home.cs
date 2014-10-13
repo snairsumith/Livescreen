@@ -573,6 +573,8 @@ namespace Livescreen
             sbi.Fill(dt);
             if (dt.Rows.Count > 0)
             {
+                Class1 css = new Class1();
+                css.UpdateStatus(Phno, "Ofline");
                 timer1.Stop();
                 Form1 f = new Form1();
                 f.Show();
@@ -640,7 +642,8 @@ namespace Livescreen
                     else if (ds.Rows[0]["action"].ToString() == "6")
                     {
 
-                       
+                        ChatWindow ch = new ChatWindow();
+                        ch.Show();
 
                     }
                     else if (ds.Rows[0]["action"].ToString() == "7")
