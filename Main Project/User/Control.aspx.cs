@@ -26,11 +26,19 @@ public partial class Control : System.Web.UI.Page
     }
     protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
     {
-        string sql = "",phno=e.CommandArgument.ToString();
+        string sql = "",lastInserId="",sql1="",sql3="",phno=e.CommandArgument.ToString();
+   
         if (e.CommandName == "chat")
         {
+            sql1 = "insert into Chat_RoomTbl(senderId,ReciverId,Status)VALUES('Admin','" + phno + "','Open'); SELECT NewID = SCOPE_IDENTITY();";
+           
+
+            lastInserId = obj.GetValue(sql1);
+
             sql = "insert into Task_tbl(action,status,phoneNumber)values(6,0,'" +phno.ToString() + "') ";
-            string url = "Chat.aspx";
+            obj.executeQuery(sql);
+            // obj.executeQuery(sql1);
+            string url = "Chat.aspx?phno="+phno+"&Roomid="+lastInserId.ToString();
             string s = "window.open('" + url + "', 'popup_window', 'width=350,height=500,left=900,top=500,resizable=no');";
             ClientScript.RegisterStartupScript(this.GetType(), "script", s, true);
         }
