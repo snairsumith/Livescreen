@@ -642,7 +642,7 @@ namespace Livescreen
                     else if (ds.Rows[0]["action"].ToString() == "6")
                     {
 
-                        ChatWindow ch = new ChatWindow();
+                        ChatWindow ch = new ChatWindow(lblPhno.Text);
                         ch.Show();
 
                     }
