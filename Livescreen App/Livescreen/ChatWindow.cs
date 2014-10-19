@@ -13,7 +13,7 @@ namespace Livescreen
     public partial class ChatWindow : Form
     {
         string phno = "", roomId = "";
-        SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=Livescreen;User Id=sa;Password=$umith;");
+        SqlConnection con = new SqlConnection("Data Source=184.154.49.162;Initial Catalog=live;User Id=livedb;Password=X2ala#58;");
         public ChatWindow(string phoneNo)
         {
             InitializeComponent();
@@ -50,7 +50,9 @@ namespace Livescreen
         void BindChat()
         {
             listBox1.Items.Clear();
-            string sql = "select userphn,message from chat_tbl where roomId='" + roomId + "'";
+            string sql = "SELECT     Livescreenz.name, chat_tbl.message FROM chat_tbl INNER JOIN Livescreenz ON chat_tbl.userphn = Livescreenz.phonenumber WHERE chat_tbl.roomId='" + roomId + "'";
+
+          
             SqlDataAdapter sda = new SqlDataAdapter(sql, con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
@@ -58,7 +60,7 @@ namespace Livescreen
             {
                 for (int i = 0; i < dt.Rows.Count; i++)
                 {
-                    listBox1.Items.Add(dt.Rows[i]["userphn"].ToString() + " : " + dt.Rows[i]["message"].ToString());
+                    listBox1.Items.Add(dt.Rows[i]["name"].ToString() + " : " + dt.Rows[i]["message"].ToString());
                 }
             }
         }
@@ -77,6 +79,23 @@ namespace Livescreen
         }
 
         private void ChatWindow_Load(object sender, EventArgs e)
+        {
+            GetCharoomId();
+            timer1.Start();
+           // BindChat();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            BindChat();
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ChatWindow_FormClosing(object sender, FormClosingEventArgs e)
         {
 
         }

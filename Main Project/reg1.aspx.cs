@@ -15,7 +15,7 @@ public partial class reg1 : System.Web.UI.Page
     String pwd = "";
     String pwd1 = "";
     int no;
-   // SMSFunction sm = new SMSFunction();
+    SMSFunction sm = new SMSFunction();
     protected void Page_Load(object sender, EventArgs e)
     {
 
@@ -49,9 +49,9 @@ public partial class reg1 : System.Web.UI.Page
             string ph = passwordsignup.Text;
             string msgContent = "Hi " + usernamesignup.Text + " User registration is complete .Your password is:" + pwd.ToString() + ".";
 
-            //sm.Message = msgContent;
-            //sm.ToMobile = ph;
-            //sm.SendSMS();
+            sm.Message = msgContent;
+            sm.ToMobile = ph;
+            sm.SendSMS();
             Label1.Text = "successfully registered & password sent to " + ph;
         }
         else

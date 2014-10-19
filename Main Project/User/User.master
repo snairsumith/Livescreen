@@ -114,10 +114,10 @@
 		<ul>
 		   <li class="active"><a class="scroll" href="#home">Home</a></li>
 		   <li><a class="scroll" href="#about">Download</a></li>
-		    <li><a class="scroll" href="#Share File">Share File</a></li>
-		   <li><a class="scroll" href="#Control">Control</a></li>
-		   <li><a class="scroll" href="#Screenshots">Screenshots</a></li>  
-           <li><a class="scroll" href="#Screenshots">Log Out</a></li>  
+		    <li><a class="scroll" href="FileSharing.aspx">Share File</a></li>
+		   <li><a class="scroll" href="Control.aspx">Control</a></li>
+		   <li><a class="scroll" href="Screenshot.aspx">Screenshots</a></li>  
+           <li><a class="scroll" href="../login.aspx">Log Out</a></li>  
 		   
 	      <div class="clear"></div>
 	    </ul>
@@ -129,10 +129,10 @@
 			<ul>
 		   <li class="active"><a class="scroll" href="#home">Home</a></li>
 		   <li><a class="scroll" href="#about">Download</a></li>
-		    <li><a class="scroll" href="#Share File">Share File</a></li>
-		   <li><a class="scroll" href="#Control">Control</a></li>
-		   <li><a class="scroll" href="#Screenshots">Screenshots</a></li>  
-           <li><a class="scroll" href="#Screenshots">Log Out</a></li>  
+		    <li><a class="scroll" href="FileSharing.aspx">Share File</a></li>
+		   <li><a class="scroll" href="Control.aspx">Control</a></li>
+		   <li><a class="scroll" href="Screenshot.aspx">Screenshots</a></li>  
+           <li><a class="scroll" href="../login.aspx">Log Out</a></li>  
 		   
 		   
 	      <div class="clear"></div>
@@ -221,6 +221,7 @@
 
 <!-- start testimonial  -->
 
+
 		<!-- end magnific-->
 		
 <!-- start testimonial  -->
@@ -242,6 +243,13 @@
 </div>
 <div class="clear"></div>
 <!-- start testimonial  -->
+    <div  align="center">
+<a href="#">
+<img src="images/button_download_now.png" height="10px" 
+
+width="50%"/></a>
+</div>
+
 
 <!-- start footer_top  -->
 <!-- start footer  -->

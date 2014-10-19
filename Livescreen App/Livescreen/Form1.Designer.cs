@@ -60,7 +60,6 @@
             this.label2.Size = new System.Drawing.Size(80, 18);
             this.label2.TabIndex = 1;
             this.label2.Text = "Username";
-       
             // 
             // label3
             // 
@@ -83,7 +82,7 @@
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(200, 32);
             this.txtUsername.TabIndex = 3;
-       
+            this.txtUsername.Text = "9656761101";
             // 
             // txtPassword
             // 
@@ -96,6 +95,7 @@
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(200, 32);
             this.txtPassword.TabIndex = 4;
+            this.txtPassword.Text = "1";
             // 
             // button1
             // 
@@ -133,7 +133,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PowderBlue;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(310, 389);
+            this.ClientSize = new System.Drawing.Size(306, 385);
             this.ControlBox = false;
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -148,7 +148,6 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.TransparencyKey = System.Drawing.Color.Silver;
-          
             this.ResumeLayout(false);
             this.PerformLayout();
 

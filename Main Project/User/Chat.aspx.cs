@@ -14,14 +14,23 @@ public partial class User_Chat : System.Web.UI.Page
     {
         HiddenField1.Value = Request.QueryString["phno"];
         HiddenField2.Value = Request.QueryString["Roomid"];
+        Label3.Text = Request.QueryString["phno"];
+        Label4.Text = Request.QueryString["Roomid"];
+        Timer1.Enabled = true;
     }
-    [WebMethod]
+ 
     public void BindChatData()
     {
-        string sql = "select * from chat_tbl where roomId='" + HiddenField2.Value + "'";
+
+
+       string sql = "SELECT     Livescreenz.name, chat_tbl.message FROM chat_tbl INNER JOIN Livescreenz ON chat_tbl.userphn = Livescreenz.phonenumber WHERE chat_tbl.roomId='" + HiddenField2.Value + "'";
         DataTable dt = obj.GetDatatable(sql);
         DataList1.DataSource = dt;
         DataList1.DataBind();
     }
-   
+
+    protected void Timer1_Tick(object sender, EventArgs e)
+    {
+        BindChatData();
+    }
 }

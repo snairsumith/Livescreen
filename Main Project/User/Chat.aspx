@@ -61,18 +61,19 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-    
-    </div>
-        <table class="auto-style1" style="width: 350px; height: auto">
+   <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+
+             <table class="auto-style1" style="width: 350px; height: auto">
             <tr>
                 <td colspan="2">
+                        <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+        <ContentTemplate>
                     <asp:DataList ID="DataList1" runat="server" Height="138px" Width="344px">
                         <ItemTemplate>
                             <table class="auto-style1">
                                 <tr>
                                     <td>
-                                        <asp:Label ID="Label1" runat="server" ForeColor="Red" Text='<%# Eval("clientip") %>'></asp:Label>
+                                        <asp:Label ID="Label1" runat="server" ForeColor="Red" Text='<%# Eval("name") %>'></asp:Label>
                                     </td>
                                     <td>
                                         <asp:Label ID="Label2" runat="server" Text='<%# Eval("message") %>'></asp:Label>
@@ -81,6 +82,11 @@
                             </table>
                         </ItemTemplate>
                     </asp:DataList>
+            <asp:Timer ID="Timer1" runat="server" Interval="1000" OnTick="Timer1_Tick">
+                    </asp:Timer>
+              </ContentTemplate>
+
+    </asp:UpdatePanel>
                 </td>
             </tr>
             <tr>
@@ -98,9 +104,14 @@
                     <div class="errMsg">
                 </div>
                     <asp:HiddenField ID="HiddenField2" runat="server" />
+                    <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
+                    <asp:Label ID="Label4" runat="server" Text="Label"></asp:Label>
+                    
                 </td>
             </tr>
         </table>
+      
+       
     </form>
 </body>
 </html>

@@ -33,6 +33,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.timeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.downloadFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
@@ -53,7 +54,8 @@
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.closToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.popupNotifier1 = new NotificationWindow.PopupNotifier();
-            this.downloadFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label3 = new System.Windows.Forms.Label();
+            this.chatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -70,7 +72,7 @@
             this.menuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(282, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(283, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -80,6 +82,7 @@
             this.settingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.timeToolStripMenuItem,
             this.downloadFileToolStripMenuItem,
+            this.chatToolStripMenuItem,
             this.logoutToolStripMenuItem});
             this.settingsToolStripMenuItem.Font = new System.Drawing.Font("Britannic Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.settingsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.InfoText;
@@ -96,6 +99,13 @@
             this.timeToolStripMenuItem.Text = "Timer";
             this.timeToolStripMenuItem.Click += new System.EventHandler(this.timeToolStripMenuItem_Click);
             // 
+            // downloadFileToolStripMenuItem
+            // 
+            this.downloadFileToolStripMenuItem.Name = "downloadFileToolStripMenuItem";
+            this.downloadFileToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.downloadFileToolStripMenuItem.Text = "Download File";
+            this.downloadFileToolStripMenuItem.Click += new System.EventHandler(this.downloadFileToolStripMenuItem_Click);
+            // 
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.Font = new System.Drawing.Font("Britannic Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -107,7 +117,7 @@
             // 
             // timer1
             // 
-            this.timer1.Interval = 1000;
+            this.timer1.Interval = 10000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // label1
@@ -281,12 +291,21 @@
             this.popupNotifier1.TitleFont = new System.Drawing.Font("Segoe UI", 11.25F);
             this.popupNotifier1.TitleText = null;
             // 
-            // downloadFileToolStripMenuItem
+            // label3
             // 
-            this.downloadFileToolStripMenuItem.Name = "downloadFileToolStripMenuItem";
-            this.downloadFileToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
-            this.downloadFileToolStripMenuItem.Text = "Download File";
-            this.downloadFileToolStripMenuItem.Click += new System.EventHandler(this.downloadFileToolStripMenuItem_Click);
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(186, 278);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "label3";
+            // 
+            // chatToolStripMenuItem
+            // 
+            this.chatToolStripMenuItem.Name = "chatToolStripMenuItem";
+            this.chatToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.chatToolStripMenuItem.Text = "Chat";
+            this.chatToolStripMenuItem.Click += new System.EventHandler(this.chatToolStripMenuItem_Click);
             // 
             // Home
             // 
@@ -294,7 +313,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(282, 275);
+            this.ClientSize = new System.Drawing.Size(283, 317);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.lblPhno);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
@@ -350,5 +370,7 @@
         private System.Windows.Forms.ToolStripMenuItem closToolStripMenuItem;
         private NotificationWindow.PopupNotifier popupNotifier1;
         private System.Windows.Forms.ToolStripMenuItem downloadFileToolStripMenuItem;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ToolStripMenuItem chatToolStripMenuItem;
     }
 }

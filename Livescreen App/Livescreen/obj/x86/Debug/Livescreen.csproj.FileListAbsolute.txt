@@ -33,3 +33,17 @@ D:\Sumith\Github\Livescreen\Livescreen App\Livescreen\obj\x86\Debug\Livescreen.H
 D:\Sumith\Github\Livescreen\Livescreen App\Livescreen\obj\x86\Debug\Livescreen.Properties.Resources.resources
 D:\Sumith\Github\Livescreen\Livescreen App\Livescreen\obj\x86\Debug\Livescreen.csproj.GenerateResource.Cache
 D:\Sumith\Github\Livescreen\Livescreen App\Livescreen\obj\x86\Debug\Livescreen.DownloadFiles.resources
+E:\Livescreen-master\Livescreen-master\Livescreen App\Livescreen\obj\x86\Debug\Livescreen.exe
+E:\Livescreen-master\Livescreen-master\Livescreen App\Livescreen\obj\x86\Debug\Livescreen.pdb
+E:\Livescreen-master\Livescreen-master\Livescreen App\Livescreen\bin\Debug\Livescreen.exe
+E:\Livescreen-master\Livescreen-master\Livescreen App\Livescreen\bin\Debug\Livescreen.pdb
+E:\Livescreen-master\Livescreen-master\Livescreen App\Livescreen\bin\Debug\NotificationWindow.pdb
+E:\Livescreen-master\Livescreen-master\Livescreen App\Livescreen\obj\x86\Debug\Livescreen.csprojResolveAssemblyReference.cache
+E:\Livescreen-master\Livescreen-master\Livescreen App\Livescreen\obj\x86\Debug\Livescreen.ChatWindow.resources
+E:\Livescreen-master\Livescreen-master\Livescreen App\Livescreen\obj\x86\Debug\Livescreen.DownloadFiles.resources
+E:\Livescreen-master\Livescreen-master\Livescreen App\Livescreen\obj\x86\Debug\Livescreen.Form1.resources
+E:\Livescreen-master\Livescreen-master\Livescreen App\Livescreen\obj\x86\Debug\Livescreen.Form2.resources
+E:\Livescreen-master\Livescreen-master\Livescreen App\Livescreen\obj\x86\Debug\Livescreen.Home.resources
+E:\Livescreen-master\Livescreen-master\Livescreen App\Livescreen\obj\x86\Debug\Livescreen.Properties.Resources.resources
+E:\Livescreen-master\Livescreen-master\Livescreen App\Livescreen\obj\x86\Debug\Livescreen.csproj.GenerateResource.Cache
+D:\Sumith\Github\Livescreen\Livescreen App\Livescreen\obj\x86\Debug\Livescreen.ChatWindow.resources

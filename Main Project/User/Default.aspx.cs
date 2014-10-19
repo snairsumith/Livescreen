@@ -21,7 +21,7 @@ public partial class _Default : System.Web.UI.Page
             int status = 1;
             string Query = string.Empty;
 
-            Query = "INSERT INTO chat_tbl (userphn,message,roomId) VALUES ('" + email + "','" + name + "','"+roomid+"')";
+            Query = "INSERT INTO chat_tbl (userphn,message,roomId) VALUES ('Admin','" + name + "','"+roomid+"')";
             status = obj.executeQuery(Query);
 
 

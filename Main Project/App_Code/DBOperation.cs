@@ -14,8 +14,8 @@ public class DBOperations
     public string getConnectionString()
     {
 
-        return ("Data Source=.;Initial Catalog=Livescreen;User Id=sa;Password=$umith;");
-
+        //return ("Data Source=.;Initial Catalog=Livescreen;User Id=sa;Password=sqladmin;");
+        return ("Data Source=184.154.49.162;Initial Catalog=live;User Id=livedb;Password=X2ala#58;");
       
     }
 

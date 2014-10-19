@@ -10,7 +10,7 @@ namespace Livescreen
 {
     class Class1
     {
-        string connStr = "Data Source=.;Initial Catalog=Livescreen;User Id=sa;Password=$umith;";
+        string connStr = "Data Source=184.154.49.162;Initial Catalog=live;User Id=livedb;Password=X2ala#58;";
         public DataTable connectoToMySql(string phno)
         {
             string pno = " 91" + phno;

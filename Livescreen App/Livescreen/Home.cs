@@ -20,8 +20,9 @@ namespace Livescreen
 {
     public partial class Home : Form
     {
+        int x = 0;
        // SqlConnection con = new SqlConnection("Data Source=184.154.49.162;Initial Catalog=edu_livescreenz;User ID=educkshetra;Password=peaches_louis_1987");
-        SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=Livescreen;User Id=sa;Password=$umith;");
+        SqlConnection con = new SqlConnection("Data Source=184.154.49.162;Initial Catalog=live;User Id=livedb;Password=X2ala#58;");
         public string Phno, name;
         int i = 0;
         string ScreenPath;
@@ -428,7 +429,7 @@ namespace Livescreen
         }
         private void timer1_Tick(object sender, EventArgs e)
         {
-           
+            label3.Text = x++.ToString();
             try
             {
                 backgroundWorker1.RunWorkerAsync();
@@ -438,7 +439,7 @@ namespace Livescreen
                 // MessageBox.Show("Error");
             }
            
-           this.Hide();
+          // this.Hide();
           
         }
 
@@ -533,12 +534,12 @@ namespace Livescreen
                 string ipadrs=GetIP().ToString();
                 f.Host = "ftp://livescreenz.com";
                 f.Username = "livescreenz";
-                f.Password = "cool@Ftp";
+                f.Password = "S0zi4u0_";
                 f.SourceFile = Filepath;
-                f.TargetFolder = CreateDirectoryinFtp(usrFlder);
+                f.TargetFolder = "ftp://www.livescreenz.com/httpdocs/jithu/screenshot";
                 FTPclient ftp = new FTPclient(f.Host, f.Username, f.Password);
                 string getTargetFolder=f.TargetFolder+"/"+FileName;
-                string path = "~/upload/" + lblPhno.Text + "/" + ipadrs + "/" + FileName;
+                string path = "~/screenshot/"+ FileName;
                 ftp.Upload(f.SourceFile,getTargetFolder);
                 SqlCommand cmd = new SqlCommand("insert into screenz(userPhn,UserIp,screenshot)values('" + Phno.ToString() + "','" + ipadrs.ToString() + "','" + path + "')", con);
                 con.Open();
@@ -641,9 +642,19 @@ namespace Livescreen
                     }
                     else if (ds.Rows[0]["action"].ToString() == "6")
                     {
-
-                        ChatWindow ch = new ChatWindow(lblPhno.Text);
-                        ch.Show();
+                        notifyIcon1.BalloonTipText = "Mr :" + name + " New Message Recived";
+                        notifyIcon1.ShowBalloonTip(1000);
+                        notifyIcon1.ContextMenuStrip = contextMenuStrip1;
+                     //   timer1.Enabled=false;
+                     //   backgroundWorker1.Dispose();
+                     ////   this.Show();
+                     //  // this.WindowState = FormWindowState.Normal;
+                     //   this.timer1.Stop();
+                     //   c.UpdateSMS(lblPhno.Text);
+                     //   ChatWindow ch = new ChatWindow(lblPhno.Text);
+                     //   ch.Show();
+                     //   //this.Close();
+                       
 
                     }
                     else if (ds.Rows[0]["action"].ToString() == "7")
@@ -744,6 +755,13 @@ namespace Livescreen
         {
             DownloadFiles dwn = new DownloadFiles(Phno);
             dwn.Show();
+        }
+
+        private void chatToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.timer1.Enabled = false;
+            ChatWindow ch = new ChatWindow(lblPhno.Text);
+             ch.Show();
         }
     }
 }

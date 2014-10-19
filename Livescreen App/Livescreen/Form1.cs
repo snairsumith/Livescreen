@@ -17,7 +17,7 @@ namespace Livescreen
     public partial class Form1 : Form
     {
         //SqlConnection con = new SqlConnection("Data Source=184.154.49.162;Initial Catalog=edu_livescreenz;User ID=educkshetra;Password=peaches_louis_1987");
-        SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=Livescreen;User Id=sa;Password=$umith;");
+        SqlConnection con = new SqlConnection("Data Source=184.154.49.162;Initial Catalog=live;User Id=livedb;Password=X2ala#58;");
         Class1 css = new Class1();
         public Form1()
         {

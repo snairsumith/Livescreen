@@ -44,11 +44,13 @@ public partial class Control : System.Web.UI.Page
         }
         else if (e.CommandName == "cntrl")
         {
+            Response.Redirect("Action.aspx?phno=" + phno);
         }
         else if (e.CommandName == "screen")
         {
-            sql = "insert into Task_tbl(action,status,phoneNumber)values(7,0,'" + phno.ToString() + "') ";
+            sql = "insert into Task_tbl(action,status,phoneNumber)values(5,0,'" + phno.ToString() + "') ";
             obj.Insert(sql);
+            Response.Redirect("Screenshot.aspx");
         }
        
         Binddata();
